@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VÉLOCITY MOTORS | Concesionario</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <!-- ==================== MENÚ ==================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            VÉLOCITY<span> MOTORS</span>
+        </div>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#vehiculos">Vehículos</a>
+            <a href="#comparador">Comparar</a>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <button class="btn-menu" onclick="mostrarMenu()">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- ==================== HERO ==================== -->
+
+    <section id="inicio" class="hero">
+
+        <div class="hero-contenido">
+
+            <p class="mini-titulo">CONCESIONARIO PREMIUM</p>
+
+            <h1>
+                TU PRÓXIMO
+                <span>SUPERDEPORTIVO</span>
+                TE ESPERA
+            </h1>
+
+            <p class="descripcion">
+                Descubre una nueva generación de vehículos diseñada
+                para quienes no se conforman con lo común.
+            </p>
+
+            <div class="botones">
+
+                <a href="#vehiculos" class="btn-principal">
+                    EXPLORAR VEHÍCULOS
+                </a>
+
+                <a href="#experiencia" class="btn-secundario">
+                    DESCUBRIR MÁS
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-carro">
+
+            <img
+                src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1400&q=80"
+                alt="Automóvil deportivo"
+            >
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== ESTADÍSTICAS ==================== -->
+
+    <section class="estadisticas">
+
+        <div>
+            <strong>250+</strong>
+            <span>Vehículos</span>
+        </div>
+
+        <div>
+            <strong>15</strong>
+            <span>Marcas</span>
+        </div>
+
+        <div>
+            <strong>98%</strong>
+            <span>Clientes felices</span>
+        </div>
+
+        <div>
+            <strong>24/7</strong>
+            <span>Atención</span>
+        </div>
+
+    </section>
+
+
+    <!-- ==================== VEHÍCULOS ==================== -->
+
+    <section id="vehiculos" class="seccion">
+
+        <div class="titulo-seccion">
+
+            <p>CATÁLOGO</p>
+
+            <h2>
+                ELIGE TU
+                <span>VEHÍCULO</span>
+            </h2>
+
+            <div class="linea"></div>
+
+        </div>
+
+
+        <div class="vehiculos-grid">
+
+
+            <!-- CARRO 1 -->
+
+            <article class="card-carro">
+
+                <div class="imagen-carro">
+
+                    <span class="etiqueta">
+                        DESTACADO
+                    </span>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=900&q=80"
+                        alt="Auto deportivo"
+                    >
+
+                </div>
+
+                <div class="info-carro">
+
+                    <p class="marca">SPORT SERIES</p>
+
+                    <h3>Velocity X1</h3>
+
+                    <div class="datos">
+
+                        <span>⚡ 450 HP</span>
+                        <span>🏁 310 KM/H</span>
+                        <span>⚙️ AUTOMÁTICO</span>
+
+                    </div>
+
+                    <div class="precio">
+                        $280.000.000
+                    </div>
+
+                    <button
+                        class="btn-card"
+                        onclick="verVehiculo('Velocity X1')"
+                    >
+                        VER VEHÍCULO →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- CARRO 2 -->
+
+            <article class="card-carro">
+
+                <div class="imagen-carro">
+
+                    <span class="etiqueta nuevo">
+                        NUEVO
+                    </span>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=900&q=80"
+                        alt="Vehículo deportivo"
+                    >
+
+                </div>
+
+                <div class="info-carro">
+
+                    <p class="marca">LUXURY SERIES</p>
+
+                    <h3>Velocity GT</h3>
+
+                    <div class="datos">
+
+                        <span>⚡ 520 HP</span>
+                        <span>🏁 330 KM/H</span>
+                        <span>⚙️ AUTOMÁTICO</span>
+
+                    </div>
+
+                    <div class="precio">
+                        $350.000.000
+                    </div>
+
+                    <button
+                        class="btn-card"
+                        onclick="verVehiculo('Velocity GT')"
+                    >
+                        VER VEHÍCULO →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- CARRO 3 -->
+
+            <article class="card-carro">
+
+                <div class="imagen-carro">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1504215680853-026ed2a45def?auto=format&fit=crop&w=900&q=80"
+                        alt="Carro deportivo negro"
+                    >
+
+                </div>
+
+                <div class="info-carro">
+
+                    <p class="marca">PERFORMANCE SERIES</p>
+
+                    <h3>Velocity RS</h3>
+
+                    <div class="datos">
+
+                        <span>⚡ 610 HP</span>
+                        <span>🏁 350 KM/H</span>
+                        <span>⚙️ AUTOMÁTICO</span>
+
+                    </div>
+
+                    <div class="precio">
+                        $430.000.000
+                    </div>
+
+                    <button
+                        class="btn-card"
+                        onclick="verVehiculo('Velocity RS')"
+                    >
+                        VER VEHÍCULO →
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== CARRO INTERACTIVO ==================== -->
+
+    <section class="interactivo">
+
+        <div class="interactivo-texto">
+
+            <p>EXPLORA CADA DETALLE</p>
+
+            <h2>
+                CONOCE TU
+                <span>VEHÍCULO</span>
+            </h2>
+
+            <p>
+                Haz clic sobre las diferentes partes del vehículo
+                para descubrir sus características.
+            </p>
+
+            <div id="info-pieza" class="info-pieza">
+
+                <h3>Selecciona una pieza</h3>
+
+                <p>
+                    Haz clic en los botones alrededor del automóvil.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="carro-interactivo">
+
+            <img
+                src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1200&q=80"
+                alt="Vehículo interactivo"
+            >
+
+
+            <button
+                class="punto punto-motor"
+                onclick="mostrarPieza('motor')"
+            >
+                +
+            </button>
+
+            <button
+                class="punto punto-llantas"
+                onclick="mostrarPieza('llantas')"
+            >
+                +
+            </button>
+
+            <button
+                class="punto punto-faros"
+                onclick="mostrarPieza('faros')"
+            >
+                +
+            </button>
+
+            <button
+                class="punto punto-interior"
+                onclick="mostrarPieza('interior')"
+            >
+                +
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== TABLA ==================== -->
+
+    <section id="comparador" class="seccion comparador">
+
+        <div class="titulo-seccion">
+
+            <p>COMPARADOR</p>
+
+            <h2>
+                COMPARA NUESTROS
+                <span>MODELOS</span>
+            </h2>
+
+        </div>
+
+
+        <div class="tabla-contenedor">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Característica</th>
+                        <th>Velocity X1</th>
+                        <th>Velocity GT</th>
+                        <th>Velocity RS</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Potencia</td>
+                        <td>450 HP</td>
+                        <td>520 HP</td>
+                        <td>610 HP</td>
+                    </tr>
+
+                    <tr>
+                        <td>Velocidad máxima</td>
+                        <td>310 km/h</td>
+                        <td>330 km/h</td>
+                        <td>350 km/h</td>
+                    </tr>
+
+                    <tr>
+                        <td>0-100 km/h</td>
+                        <td>3.8 s</td>
+                        <td>3.4 s</td>
+                        <td>2.9 s</td>
+                    </tr>
+
+                    <tr>
+                        <td>Transmisión</td>
+                        <td>Automática</td>
+                        <td>Automática</td>
+                        <td>Automática</td>
+                    </tr>
+
+                    <tr>
+                        <td>Precio</td>
+                        <td>$280 M</td>
+                        <td>$350 M</td>
+                        <td>$430 M</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== EXPERIENCIA ==================== -->
+
+    <section id="experiencia" class="experiencia">
+
+        <div class="experiencia-contenido">
+
+            <p>VELOCITY EXPERIENCE</p>
+
+            <h2>
+                NO VENDEMOS
+                <span>SOLO CARROS.</span>
+            </h2>
+
+            <p>
+                Creamos una experiencia completa para los amantes
+                del automóvil.
+            </p>
+
+            <button onclick="mostrarMensaje()">
+                DESCUBRIR EXPERIENCIA
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== CONTACTO ==================== -->
+
+    <section id="contacto" class="contacto">
+
+        <div>
+
+            <p>¿LISTO PARA CONDUCIR?</p>
+
+            <h2>
+                ENCUENTRA TU
+                <span>PRÓXIMO AUTO</span>
+            </h2>
+
+        </div>
+
+        <button onclick="contactar()">
+            CONTACTARNOS
+        </button>
+
+    </section>
+
+
+    <!-- ==================== FOOTER ==================== -->
+
+    <footer>
+
+        <div class="logo">
+            VÉLOCITY<span> MOTORS</span>
+        </div>
+
+        <p>
+            © 2026 Velocity Motors — Proyecto educativo
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="funciones.js"></script>
+
+</body>
+</html>
